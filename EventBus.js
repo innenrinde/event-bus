@@ -1,7 +1,7 @@
 /**
  * Class to emit events
  */
-export class EventBus {
+module.exports = class EventBus {
 
 	/**
 	 * Callbacks collection grouped by event name

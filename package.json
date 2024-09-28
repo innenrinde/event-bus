@@ -14,7 +14,6 @@
     "deep-eql": "^5.0.2",
     "esbuild": "^0.21.5",
     "estree-walker": "^3.0.3",
-    "fsevents": "^2.3.3",
     "get-func-name": "^2.0.2",
     "loupe": "^3.1.1",
     "magic-string": "^0.30.11",
