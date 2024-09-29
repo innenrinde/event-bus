@@ -16,7 +16,7 @@ npm test
 git clone https://github.com/innenrinde/test-event-bus
 ```
 ```
-git i
+npm i
 ```
 ```
 node index.js
