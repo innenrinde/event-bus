@@ -36,13 +36,11 @@ module.exports = class EventBus {
 	 * @param {Array} args
 	 */
 	emit(eventsName, ...args) {
-		let events = [];
+		let events = eventsName;
 		if (eventsName === "*") {
 			events = Object.keys(this.#events);
 		} else if (!Array.isArray(eventsName)) {
 			events = [eventsName];
-		} else {
-			events = eventsName;
 		}
 
 		events.forEach(eventName => {
