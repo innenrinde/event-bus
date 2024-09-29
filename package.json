@@ -1,17 +1,10 @@
 {
   "name": "@innenrinde/event-bus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
-  "dependencies": {
-    "vitest": "^2.1.1"
-  },
+  "directories": {},
+  "dependencies": {},
   "devDependencies": {},
-  "scripts": {
-    "test": "vitest --globals"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/innenrinde/event-bus.git"
@@ -22,5 +15,10 @@
     "url": "https://github.com/innenrinde/event-bus/issues"
   },
   "homepage": "https://github.com/innenrinde/event-bus#readme",
-  "description": ""
+  "description": "A tiny library to emit callbacks to the specified events",
+  "keywords": [
+    "event",
+    "bus",
+    "emitter"
+  ]
 }

@@ -1,14 +1,29 @@
-Use the package @innenrinde/event-bus:
+Using the package @innenrinde/event-bus
 
-https://www.npmjs.com/package/@innenrinde/event-bus
+### Config EventBus class
+```
+const EventBus = require("@innenrinde/event-bus");
+let emitter = new EventBus();
+```
+### Add one event
+```
+emitter.on("eventName1", (value) => {});
+```
 
+### Emits a value
+```
+emitter.emit("eventName1", value);
+```
 
-### Test package using vitest:
+### Emits more values
 ```
-npm i
+emitter.on("eventName2", (value1, value2) => {});
+emitter.emit("eventName2", value1, value2);
 ```
+
+### Emits multiple events at the same time
 ```
-npm test
+emitter.emit(["eventName1", "eventName2"), value);
 ```
 
 ### Test package using external library:
